@@ -70,7 +70,7 @@ def bbox_iou(bbox1, bbox2, xyxy=False, giou=False, diou=False, ciou=False, epsil
     print(bbox1.shape )
     print(bbox2.shape)
     print(bbox1.shape == bbox2.shape)
-    assert bbox1.shape == bbox2.shape
+#     assert bbox1.shape == bbox2.shape
     # giou loss: https://arxiv.org/abs/1902.09630
     if xyxy:
         b1x1, b1y1, b1x2, b1y2 = bbox1[..., 0], bbox1[..., 1], bbox1[..., 2], bbox1[..., 3]
