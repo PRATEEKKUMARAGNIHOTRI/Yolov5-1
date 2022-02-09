@@ -67,6 +67,9 @@ class YoloLoss(object):
 
 
 def bbox_iou(bbox1, bbox2, xyxy=False, giou=False, diou=False, ciou=False, epsilon=1e-9):
+    print(bbox1.shape )
+    print(bbox2.shape)
+    print(bbox1.shape == bbox2.shape)
     assert bbox1.shape == bbox2.shape
     # giou loss: https://arxiv.org/abs/1902.09630
     if xyxy:
